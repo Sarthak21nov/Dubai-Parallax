@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(#040228 0%,#0075c7 40%);
+    /* overflow-x: hidden; */
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    /* Display: flex {bring every content in same line horizontally} */
+    display: flex;
+    /* justify-content:  space-between {aligns the content or container with space}*/
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    color: azure;
+    font-size: 2em;
+    cursor: default;
+}
+.navbar a{
+    color: #fff;
+    /* text-decoration: none {removes underlines from the links} */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+.navbar a:hover{
+    background-color: aqua;
+}
+.parallax{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    /* Position: relative {} */
+    height: 100vh;
+    align-items: center;
+
+}
+.parallax img{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    /* pointer-events: none {} */
+    pointer-events: none;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    background: navy;
+}
+.sec h2{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.sec h2:nth-child(2){
+    font-size: 2em;
+}
+.sec p{
+    font-size: 1em;
+    color: #fff;
+}
